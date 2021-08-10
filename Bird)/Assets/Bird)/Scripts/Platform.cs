@@ -86,6 +86,7 @@ public class Platform : MonoBehaviour
             transform.position += new Vector3(0, 15f, 0);
 
             CreateTrap();
+            CreateCoin();
         }
     }
 
@@ -102,7 +103,6 @@ public class Platform : MonoBehaviour
             trap = Instantiate(trapsConfig.TrapsConfigure[Random.Range(0, trapsConfig.TrapsConfigure.Count)].Trap,
                 new Vector3(Random.Range(2, 3), spawnTr.transform.position.y, spawnTr.transform.position.z), Quaternion.identity, spawnTr);
         }
-        CreateCoin();
     }
 
     void CreateCoin()

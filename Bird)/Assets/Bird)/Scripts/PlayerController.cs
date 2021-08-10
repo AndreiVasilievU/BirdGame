@@ -57,7 +57,6 @@ public class PlayerController : MonoBehaviour
         else
         {
             isFly_2 = false;
-            isFly = false;
             playerAn.SetBool("isFly", false);
         }
     }
